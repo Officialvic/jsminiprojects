@@ -1,7 +1,7 @@
 let firstName = prompt(`Please Enter your first name`)
 
 alert(`Hello ${firstName}! It's great to have you here. \n
-Welcome to GfCal, a mini Calculator for your basic operations and temp conversion. \n
+Welcome to GfCal, a mini Calculator for your basic operations and temperature conversion. \n
 Kindly click 'ok' to continue.`)
 
 let operation = prompt(`What would like to do today? \n
@@ -43,7 +43,7 @@ if (operation == 1) {
         let div = num7 / num8;
         alert(`Result = ${div}`)
     }  else {
-        alert (`Erro!!! \n Input the correct and available option.`)
+        alert(`Error!!! \n Input the correct and available option.`)
     } 
 } else if (operation == 2) {
         let convert = prompt(`Select your conversion option \n
@@ -95,5 +95,9 @@ if (operation == 1) {
             let fahrenheitk = (kelvinf2 * 9/5) - 459.67
             fahrenheitk = Number(fahrenheitk)
             alert(`The result of converting ${kelvinf2}K is ${fahrenheitk}F`)
+        } else {
+            alert(`Enter the correct and available option.`)
         }
+    } else {
+        alert (`Enter the correct and available option`)
     }
